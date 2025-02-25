@@ -1,7 +1,7 @@
 /* 🌟 GLOBAL STYLES 🌟 */
 body {
     font-family: Arial, sans-serif;
-    background: #960606;
+    background: #585858;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -20,8 +20,8 @@ body {
 
 /* 🌟 HEADINGS 🌟 */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: italic;
+    text-transform: lowercase;
     margin-top: 20px;
 }
 
