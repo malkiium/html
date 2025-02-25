@@ -18,6 +18,14 @@ body {
     border-radius: 10px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
 /* 🌟 HEADINGS 🌟 */
 h1, h2, h3, h4, h5, h6 {
     font-weight: italic;
