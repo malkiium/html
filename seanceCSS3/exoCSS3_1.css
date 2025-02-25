@@ -1,6 +1,7 @@
 body {
     border-right: 5px solid black;
     padding-right: 7px;
+    margin-right: 25px;
 }
 
 .h21 {
@@ -10,19 +11,59 @@ body {
 }
 
 .p1 {
-    font-size: 20px;
+    font-size: 17px;
     text-align: right;
     font-style: italic;
+    text-indent: 50px;
 }
 
 .h22 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     background-color: teal;
     color: white;
 }
 
 .p2 {
-    font-size: 20px;
+    font-size: 17px;
     text-indent: 50px;
+}
+
+.p3 {
+    font-size: 17px;
+    text-align: left;
+    margin-right: 25%;
+    text-transform: Capitalize;
+}
+
+.h23 {
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(101, 177, 120);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: lighter;
+    font-family: Arial;
+    font-variant: small-caps;
+}
+
+.p4 {
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.p5 {
+    font-size: 17px;
+    text-align: left;
+    margin-right: 25%;
+    text-transform: Capitalize;
+}
+
+.p6 {
+    font-size: 17px;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    margin-right: 2%;
 }
