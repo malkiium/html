@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML Elements Example</title>
+    <link rel="courSS" href="courSS.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        code {
+            background-color: #ffffff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Heading Examples</h1>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <hr> <!-- Horizontal line -->
+
+        <h2>Paragraph & Text Formatting</h2>
+        <p>This is a <strong>bold</strong>, <em>italic</em>, and <u>underlined</u> paragraph.</p>
+        <p>Subscript H<sub>2</sub>O and Superscript X<sup>2</sup></p>
+        <p>Blockquote example:</p>
+        <blockquote>This is a blockquote element used for quotes.</blockquote>
+
+        <hr>
+
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+
+        <hr>
+
+        <h2>Tables</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Forms & Inputs</h2>
+        <form>
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="color">Pick a color:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <label>Radio Buttons:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Checkboxes:</label>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I Agree</label><br><br>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr>
+
+        <h2>Multimedia</h2>
+
+        <h3>Image</h3>
+        <img src="5e976aca48be232e7219dff5c374cd46-2923557997.jpg" alt="Example Image" width="200">
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="300">
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <h3>Iframe (Embedding Web Pages)</h3>
+        <div class="=video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/tB1RJcIyQqc"
+                title=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <hr>
+
+        <h2>Links & Buttons</h2>
+        <p><a href="https://www.google.com" target="hello">Click here to visit Google</a></p>
+        <button onclick="alert('Button Clicked!')">Click Me</button>
+
+        <hr>
+
+        <h2>Code Snippet</h2>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+
+        <hr>
+
+        <h2>Div & Span</h2>
+        <div style="background-color: rgb(133, 185, 202); padding: 10px;">
+            This is a div element with background color.
+        </div>
+        <p>This is a <span style="color: red;">span element</span> inside a paragraph.</p>
+
+        <hr>
+
+        <h2>Special Characters</h2>
+        <p>&copy; Copyright 2025</p>
+        <p>&lt; &gt; &amp; &quot; &apos;</p>
+
+        <hr>
+
+        <h2>Progress & Meter</h2>
+        <label>Progress:</label>
+        <progress value="70" max="100"></progress><br><br>
+
+        <label>Meter:</label>
+        <meter value="50" min="0" max="100"></meter>
+
+        <hr>
+        
+        <h2> this gpt chat :</h2>
+        <p> <a href="https://chatgpt.com/c/67bd97fc-d1e4-8008-8447-7e16f7ade32c" target="Hai"> The Chat.</a></p>
+
+    </div>
+
+</body>
+</html>
