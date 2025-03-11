@@ -1,0 +1,44 @@
+/* Style du bandeau */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Suppression des puces et mise en ligne */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style des éléments de la liste */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Style des liens */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Ajouter un padding en haut du body pour ne pas cacher le contenu */
+body {
+    padding-top: 50px;
+}
