@@ -1,0 +1,44 @@
+body {
+    background-color: royalblue;
+}
+h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 30pt;
+}
+p {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h2 {
+    color: yellow;
+    border-bottom: solid thick yellow;
+    border-left: solid thick yellow;
+    border-radius: 20px 20px 20px;
+    padding-left: 10px;
+}
+div {
+    text-align: center;
+}
+a {
+    color: red;
+    font-size: 20pt;
+}
+ol {
+    list-style-image: url('../image/legoCS.png'); /* Adjusted path */
+}
+th.jaune {
+    background-color: yellow;
+}
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+}
+td {
+    border: thin solid black;
+}
+i {
+    color: yellow;
+    font-size: 16pt;
+}
