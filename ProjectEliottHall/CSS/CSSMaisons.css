@@ -1,0 +1,66 @@
+/* Arrière-plan global magique */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../IMAGES/Maisons.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+  }
+  
+  /* Effet "porte magique" pour le contenu */
+  main.container, header.container, footer.container {
+    background: rgba(0, 0, 0, 0.6); /* fond noir translucide */
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Titre principal magique */
+  #titre h1 {
+    font-size: 2.5rem;
+    color: #f9d342;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  /* Sous-titre */
+  #titre p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 0;
+  }
+  
+  /* Menu transparent */
+  #menu nav {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Liens dans le menu */
+  #menu nav a {
+    color: #f9d342;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Image de contenu (figcaption invisible ici car c’est en background maintenant) */
+  #contenu img {
+    display: none;
+  }
+  
+  /* Footer */
+  #auteurs {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Listes du contenu */
+  #contenu ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+  }
+  
