@@ -76,6 +76,7 @@ html, body {
   overflow: scroll;
   padding: 10px;
   clear: both;
+  color: white;
 }
 
 #auteurs {
