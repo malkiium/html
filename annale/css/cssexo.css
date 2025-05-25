@@ -30,3 +30,15 @@ a {
 th.jaune {
     background-color: yellow;
 }
+
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol li {
+    background: url('../images/legoCS.png') no-repeat left center;
+    background-size: 32px 18px;
+    padding-left: 30px;
+    list-style-type: none;
+}
