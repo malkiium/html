@@ -1,3 +1,27 @@
 body {
     background-color: rgb(64, 109, 243);
 }
+
+h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 30pt;
+}
+
+h2 {
+    color: yellow;
+    border-bottom: solid thick yellow;
+    border-left: solid thick yellow;
+    border-radius: 20px 20px 20px;
+    padding-left: 10px;
+}
+
+i {
+    color: yellow;
+    font-size: 16pt;
+}
+
+a {
+    color: red;
+    font-size: 20pt;
+}
