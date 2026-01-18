@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Warframe DPS Calculator</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  body { font-family: sans-serif; margin: 20px; }
+  input, textarea { width: 100%; margin: 5px 0; }
+</style>
+</head>
+<body>
+<h1>Warframe DPS Calculator (Local)</h1>
+
+<h2>Weapon & Mod Input (JSON)</h2>
+<textarea id="weaponInput" rows="15">
+{
+  "weapon_name": "Soma Prime",
+  "base_damage": {"physical": 15, "slash": 15, "impact": 0, "puncture": 0},
+  "crit_chance": 0.35,
+  "crit_mult": 2.0,
+  "fire_rate": 10,
+  "multishot": 1.5,
+  "mods": [
+    {"name": "Serration", "damage_mult": 1.15},
+    {"name": "Point Strike", "crit_chance_mult": 1.15},
+    {"name": "Vital Sense", "crit_mult_mult": 1.15}
+  ]
+}
+</textarea>
+<button onclick="calculateDPS()">Calculate DPS & Kill Times</button>
+
+<h2>Results</h2>
+<div id="results"></div>
+
+<canvas id="killChart" width="800" height="400"></canvas>
+
+<script>
+function calculateAvgDamage(weapon) {
+    let base = Object.values(weapon.base_damage).reduce((a,b)=>a+b,0);
+    let critChance = weapon.crit_chance;
+    let critMult = weapon.crit_mult;
+
+    weapon.mods.forEach(mod => {
+        if(mod.damage_mult) base *= mod.damage_mult;
+        if(mod.crit_chance_mult) critChance *= mod.crit_chance_mult;
+        if(mod.crit_mult_mult) critMult *= mod.crit_mult_mult;
+    });
+
+    let avgDamage = base * (1 + critChance * (critMult - 1));
+    avgDamage *= weapon.multishot || 1;
+    return avgDamage;
+}
+
+function calculateDPS() {
+    const weapon = JSON.parse(document.getElementById("weaponInput").value);
+    const avgDamage = calculateAvgDamage(weapon);
+    const dps = avgDamage * weapon.fire_rate;
+
+    const enemyLevels = Array.from({length: 100}, (_, i) => i + 1);
+    const enemyHealth = enemyLevels.map(lvl => 100 + lvl * 50); // simple scaling formula
+    const killTimes = enemyHealth.map(h => h / dps);
+
+    document.getElementById("results").innerHTML = `
+      <p><b>Weapon:</b> ${weapon.weapon_name}</p>
+      <p><b>Average Damage per Hit:</b> ${avgDamage.toFixed(2)}</p>
+      <p><b>DPS:</b> ${dps.toFixed(2)}</p>
+    `;
+
+    const ctx = document.getElementById('killChart').getContext('2d');
+    if(window.myChart) window.myChart.destroy(); // destroy previous chart
+    window.myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: enemyLevels,
+            datasets: [{
+                label: 'Time to Kill (seconds)',
+                data: killTimes,
+                borderColor: 'red',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.2
+            }]
+        },
+        options: {
+            scales: {
+                x: { title: { display: true, text: 'Enemy Level' } },
+                y: { title: { display: true, text: 'Time to Kill (s)' } }
+            }
+        }
+    });
+}
+</script>
+</body>
+</html>
