@@ -1,0 +1,32 @@
+body {
+    background-color: lightgrey;
+}
+
+hr {
+    background-color: white;
+    border-color: red;
+    border-style: dashed;
+    border-width: 5px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 60px;
+    color: red;
+    background-color: yellow;
+    margin: 70px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+h2 {
+    font-size: 35px;
+    padding:70px;
+    background-color: aqua;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: purple;
+    margin: 10px;
+}
