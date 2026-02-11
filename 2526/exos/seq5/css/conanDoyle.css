@@ -1,0 +1,9 @@
+p.center {
+    text-align: center;
+}
+
+img {
+    border-style: groove;
+    border-color:tomato;
+    border-width: 5px;
+}
