@@ -1,4 +1,4 @@
-p.center {
+p.centre {
     text-align: center;
 }
 
@@ -6,4 +6,45 @@ img {
     border-style: groove;
     border-color:tomato;
     border-width: 5px;
+}
+
+h1 {
+    background-color: pink;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    text-align:justify;
+    text-indent: 10px;
+}
+
+h2 {
+    background-color: purple;
+    color: white;
+}
+
+h3 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul{
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: black;
+    margin-left:20px;
+}
+
+ul>li {
+    list-style-type: none;
+    background-color: teal;
+    margin-right:30%;
+}
+
+ol>li {
+    font-size: small;
+    margin-left:-20px;
 }
