@@ -1,0 +1,57 @@
+#title1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#par1 {
+    text-align: right;
+    font-style: italic;
+}
+
+#title2 {
+    font-size: 20px;
+    text-align: center;
+    background-color: teal;
+    color:white
+}
+
+#par2 {
+    text-indent: 30px;
+}
+
+#par3 {
+    padding-right: 30%;
+}
+
+#title3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:#43a574;
+    text-align: center;
+    font-size: 20px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#par4 {
+    text-indent: 30px;
+}
+
+#par5 {
+    padding-right: 30%;
+}
+
+#par6 {
+    text-align: left;
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    border-right-style: solid;
+    border-color: black;
+    padding-right: 1%;
+    margin-right: 2%;
+    border-width: 5px;
+}
